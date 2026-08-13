@@ -1,7 +1,6 @@
 # Student grade analyzer
 
-A C++ program that takes user input for an amount of students 1-100 and then takes input for names and 3 different test grades for each student. Then it averages the grades out for each student
-and returns the averages for each student in descending order.
+A C++ program that accepts 1–100 students, collects three test scores for each student, calculates their averages, and displays the results from highest to lowest.
 
 ## Features
 
@@ -24,8 +23,9 @@ and returns the averages for each student in descending order.
 ## Project Structure
 
 ```text
-StudentsScores_Analyzer
-└── Source.cpp
+student-grade-analyzer/
+└── src/
+  └── main.cpp
 ```
 
 ## How to run
@@ -33,7 +33,7 @@ StudentsScores_Analyzer
 Compile the program with:
 
 ```bash
-g++ StudentsScores_Analyzer/Source.cpp -o main
+g++ src/main.cpp -o main
 ```
 
 Run it with:
@@ -49,25 +49,21 @@ This program is used to average students test scores for 3 tests up to a maximum
 How many students are there?2
 Enter the name of student #1: JR
 JR
-Enter the score for test #1 of student JR: 
+Enter the score [0-100] for test #1 of student JR:
 25
-Enter the score for test #2 of student JR: 
+Enter the score [0-100] for test #2 of student JR:
 50
-Enter the score for test #3 of student JR: 
+Enter the score [0-100] for test #3 of student JR: 
 75
 Enter the name of student #2: Jeremy
 Jeremy
-Enter the score for test #1 of student Jeremy: 
+Enter the score [0-100] for test #1 of student Jeremy:
 22
-Enter the score for test #2 of student Jeremy: 
+Enter the score [0-100] for test #2 of student Jeremy:
 31
-Enter the score for test #3 of student Jeremy: 
+Enter the score [0-100] for test #3 of student Jeremy:
 41
-These are the test scores sorted from highest to lowest.
+Students sorted by average score, highest to lowest:
 1. JR    --> 50.00
 2. Jeremy    --> 31.33
 ```
-
-## Author 
-
-Jeremy Reed
